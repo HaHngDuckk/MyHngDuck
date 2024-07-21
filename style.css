@@ -113,95 +113,100 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
 body {
-  background: #0F0F0F;
-  color: #FEFEFE;
+  background: var(--background-color);
+  color: var(--content-color);
+}
+
+:root {
+  --background-color: #221f1f;
+  --title-color: #FFFFFF;
+  --content-color: #F3F3F3;
+  --button-color: #313131;
+  --button-text-color: #1F1235;
 }
 
 #container {
+  
 }
 
-
-.div-avatar-user-border {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
+.div-border-avatar {
+  position: relative;
 }
 
-.img-avatar-user {
-  width: 170px;
-  height: 170px;
+.img-avatar {
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   background-size: cover;
-  border-radius: 50%;
-  border: 15px solid #FEFEFE57;
-  outline: 15px solid #FEFEFE33;
 }
 
-.div-name-user-border {
-  margin-top: 25px;
+.img-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.p-name-user {
-  text-align: center;
-  font-size: 28px;
+.div-name-user {
+  margin: 0px 20px 20px 20px;
 }
 
-.div-mxh-fast-border {
+.p-name {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.p-school {
+  margin-right: 40px;
+}
+
+.div-border-mxh {
+  margin: 30px 10px 10px 10px;
+}
+
+.div-box-mxh {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.a-mxh {
+  text-decoration: none;
+  color: var(--content-color);
+  background: var(--button-color);
+  width: 50%;
+  padding: 15px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
 }
 
-.a-button-fast {
-  margin-inline: 5px;
+.icon-mxh {
+  margin-right: 8px;
+  font-size: 19px;
+}
+
+.div-lh-email {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.a-fl {
   text-decoration: none;
-  color: #FEFEFE;
-  background: #1F1F1F;
-  padding: 10px 13px;
-  border-radius: 6px;
-}
-
-.icon-fast {
-  margin-right: 3px;
-}
-
-.div-list-friend-border {
-  margin: 35px 25px 25px 25px;
-}
-
-.p-friend {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
-.a-friend {
+  color: var(--content-color);
+  background: var(--button-color);
+  padding: 15px 10px;
+  border-radius: 5px;
+  display: block;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  color: #FEFEFE;
-  background: #1F1F1F;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 8px;
-  transition: all 0.25s ease-out;
-}
-
-.a-friend:hover .p-icon-friend {
-  font-size: 30px;
-}
-
-.p-icon-friend {
-  padding-right: 20px;
-  font-size: 20px;
-  transition: all 0.25s ease-out;
-}
-
-.p-name-friend {
-  font-size: 18px;
+  justify-content: center;
 }
